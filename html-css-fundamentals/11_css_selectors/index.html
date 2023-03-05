@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basic CSS Selectors</title>
+
+    <style type="text/css">
+        /* "div  *" - primjer selektora složenog tipa */
+        /* tipski selektori na osnovu naziva elementa */
+        /* class selektor za vrijednost class atributa može se definisati na bilo kom elementu */
+/* 
+        .content {
+            border: 1px solid violet;
+        } */
+
+        /* # id selektor*/
+/*         #first-div {
+            color: blue;
+        }
+
+        #second-div {
+            color: red;
+        } */
+
+
+        /* selektor na osnovu relacija; zovu se kombinatiori; ima ih 4; */
+        /* 1. decedant -  selektovanje svih potomaka */
+
+       /*  #first-div p {
+            color: blueviolet;
+        } */
+
+        /* 2. child selektor direktni potomci*/
+      /*   #first-div>p {
+            color: brown;
+        }
+ */
+        /* 3. prvi naredni srodni element */
+        /* #first-div+p {
+            color: aquamarine;
+        } */
+
+        /* 4. general sibling -selektor selektor svi naredni srodni elementi */
+        /* #first-div ~ p {
+            color: bisque;
+        } */
+
+        /* selektori na više kriterijuma. Selekt elementa na osnovu 2 kriterija */
+
+        p.content {
+            color: cyan;
+        }
+        
+        </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 0. Not a div.</p>
+    <div id="first-div" class="content">
+        <p>Paragrafph 1 in a first div.</p>
+        <p>Paragrafph 2 in a first div.</p>
+        <div id="second-div">
+            <p>Paragrafph 3 is in second div.</p>
+        </div>
+    </div>
+    <p class="content">Paragrafph 4 in a div.</p>
+    <p>Paragrafph 5 in a div.</p>
+</body>
+
+</html>
