@@ -1,20 +1,53 @@
-body{
+body {
     width: 1000px;
     font-family: 'Roboto', sans-serif;
-    
+
 }
 
-nav{
+nav {
     box-sizing: border-box;
-    width: 200px;    
+    width: 200px;
     display: inline-block;
     vertical-align: top;
 }
 
-aside{
+aside {
     display: inline-block;
     box-sizing: border-box;
     width: 800px;
     border-left: 1px solid black;
     padding: 34px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#heading{
+    font-size: large;
+    text-align: left;
+
+}
+
+th {
+    padding: 18px;
+}
+
+td {
+    padding: 12px;
+}
+
+th,
+td {
+    border: solid 1px #e6e6e6;
+}
+
+tr {
+    background-color: #adcedd;
+}
+
+
+tr.even {
+    background-color: #F7F7F7;
 }
